@@ -1,267 +1,587 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background:#143b40;
-    width: 100vw;
-    height: 100vh;
-  }
-  a{
-    text-decoration: none;
-  }
-  ul li {
-    list-style-type: none;
-  }
+/* CSS for Home Section*/
+
+
+ .root{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar 
+{
   
-  .nav-bar {
-    background: #142140;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    box-shadow: 2px 3px 8px rgb(0, 255, 255,0.2);
-    position: fixed;
-    text-overflow: ellipsis;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-  }
-  .nav-bar-list{
-    display: flex;
-    align-items: right;
-    margin-right: 10px;
-    margin-left: 750px;
-    font-size:20px;
-    right: 2%;
-  }
-  .nav-item {
-    margin-left: 2rem;
+   width:97%;
+   height: 30%;
+ /*  border: 2px solid blue;*/
+   border-radius: 5px;
+   padding: 3px 6px;
+   margin:12px; 
+/*  background-color:rgb(105,105,105);*/
+   
+}
+.navbar ul
+{
+   
+   overflow: auto;
+   margin: 8px;
+}
+.navbar li
+{
+    
     float: right;
-  }
-  .nav-bar-list a{
-    font-weight: 600;
-    color: pink;
-  }
-  .nav-bar-list a:hover{
-    color:white;
-  }
-  .main{
-    background: url(./images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    height: 100vh;
-    width: 100vw;
-    opacity: 0.9;
-    background-repeat: no-repeat;
-  }
-  .text{
-    padding-top: 250px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.9rem;
-    font-size: 5em;
-    max-width: 1100px;
-    margin: 2rem auto -6rem;
-    color: #fff;
-  }
-  .text1{
-    font-weight: lighter;
-  }
-  .text2{
-    text-transform: capitalize;
-  }
-  .btn1,
-  .btn2{
-    text-transform: capitalize;
-    background-color: #f1f1f1;
-    border: none;
-    font-weight: bold;
-    border-radius: 2em;
-    width: 10em;
+    list-style: none;
+    font-size: larger;
     padding: 10px;
-    font-size: 1em;
-    margin: 200px 200px;
-    cursor: pointer;
+    margin: 13px 20px;
+    color: whitesmoke;
+}
+ .navbar li a
+ {
+     
+     color: whitesmoke;
+     text-decoration: none;
+ }
+  .prot
+ {
+    float:left;
+    margin:20px;
+    list-style: none;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    color: whitesmoke;
+ }
+body
+ {
+     background-color:rgba(0, 10, 16, 0.966);
+     
+ }
+
+  .navbar li:hover{
+      background-color:black;
+      cursor:pointer;
   }
-  .btn2{
-    margin: -150px;
+   .source
+   {
+     display: flex; 
+     border-radius:50%;
+     width: 300px;
+     height: 300px;
+     float: right;
+     margin-right: 210px;
+     margin-top: 50px;
+     border: 10px solid rgb(0,255,255);
+     
+   }
+ #para
+ {
+    
+    font-family:Verdana;
+    font-size:30px;
+    color: whitesmoke;
+    margin-top:4.4em;
+    margin-left: 3.6em;
+    text-shadow: 2.2px 2.2px whitesmoke;
+ }
+  #para1
+  {
+    display: flex; 
+    font-family:Verdana;
+    font-size:larger;
+    color: whitesmoke;
+    margin-top:-0.5em;
+    margin-left: 5.7em;
   }
-  .btn1 a{
-    color: #000;
-  }
-  .btn2 a{
-    color: #000;
-  }
-  .btn2{
-    opacity: 0.5;
-  }
-  .about,
-  .shop,
-  .support,
-  .contact{
-    color: #fff;
-    height: 100vh;
-    width: 100%;
-  }
-  .about h1,
-  .shop h1{
-    background-color: #071332;
-    opacity: 1.0;
-    padding: 20px;
-    width: 15em;
-    text-transform: uppercase ;
-    text-align: center;
-    justify-content: center;
-    margin: 2% 20%;
-    color: aqua;
-    font-size: 4em;
-  }
-  .about p{
-    font-size: 1.5em;
-    margin-left: 10%;
-    text-align: left;
-  }
-  .about span{
-    font-weight: 600;
-  }
-  .abt-img{
-    height: 25%;
-    width: 25%;
-    margin: 0 10%;
-    border-radius: 20%;
-  }
-  .about div,
-  .text3{
-    display: flex;
-  }
-  .img{
-    height: 150px;
-    border-radius: 8px;
-    margin: 10px;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    background-color: white;
-    transition: 0.3s;
-    width: auto;
-    height:auto;
-    margin: 40px 100px;
-    text-align: center;
-    justify-content: center;
-    font-size: 15px;
-    border-radius: 10px;
-    padding: 10px; 
-  }
-  .card:hover{
-    transform: scale(1.1);
-  }
-  .display{
-    display: flex;
-    position: relative;
-    color: #000;
-    text-align: justify;
-  }
-  .caption{
-    font-weight: 700;
-    font-size: 20px;
-    margin: 20px;
-  }
-  .btn{
-    text-transform: capitalize;
-    background-color: #f1f1f1;
-    border: none;
-    font-weight: bold;
-    border-radius: 2em;
-    width: 10em;
-    padding: 10px;
-    font-size: 1em;
-    margin: 100px 660px;
-    cursor: pointer;
-  }
-  .support h1{
-    background-color: #071332;
-    opacity: 1.0;
-    padding: 20px;
-    width: 10em;
-    margin-left: 10%;
-    text-transform: uppercase ;
-    text-align: center;
-    color: aqua;
-    font-size: 4em;
-  }
-  .support,
-  .contact,
-  .shop,
-  .about{
-    padding: 70px;
-  }
-  .support p{
-    text-align: justify;
-    font-size: 1.5em;
-    font-weight: lighter;
-    margin: 2% 10%;
-    text-align: left;
-  }
-  .add{
-    background: rgb(0, 255, 255,0.2);
-    width: max-content;
-    height: auto;
-    margin-left: 10%;
-    padding: 10px;
-  }
-  .add h3{
-    font-size: 2em;
-    text-decoration: underline;
-  }
-  .add p{
-    font-size: 1.2em;
-    text-align:left;
-  }
-  .contact h1{
-    background-color: #071332;
-    opacity: 1.0;
-    padding: 20px;
-    width: 10em;
-    margin-left: 10%;
-    text-transform: uppercase ;
-    text-align: center;
-    color: aqua;
-    font-size: 4em;
-  }
-  .con-img{
-    margin-left:100px;
-  }
-  .handles{
-    display: grid;
-    margin-left: 10%;
-    padding: 50px;
-    text-decoration: none;
-    width: 40em;
-    background: rgb(0, 255, 255,0.2);
-  }
-  .handles a{
-  color: #fff;
-  font-size: 2em;
-  margin: 20px;
-  }
-  .icon{
-    color: #fff;
-    gap: 20px;
-  }
-  .footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
-    color: white;
-    background: black;
-  }
+     #inline
+   { 
+     display: flex;
+    font-family:Verdana;
+    font-size:larger;
+    color:rgb(0,255,255);
+    margin-top:-0.2em;
+    margin-left: -0.2px;
+    text-shadow: 2px 2px rgb(0,255,255);
+   }
+    #intro
+    {
+    display: flex; 
+    font-family:Verdana;
+    font-size:16px;
+    color:whitesmoke;
+    margin-left: 2.2em;
+    text-shadow: 0.7px 0.7px whitesmoke;
+    }
+      .home-sci{
+          display: flex;
+      }
+      .home-sci a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #0ef;
+        border-radius:50%;
+        font-size: 20px;
+        color: #0ef;
+        text-decoration: none;
+        margin:30px 15px 30px 30px;
+        
+      }
+       .home-sci a:hover
+       {
+           background: #0ef;
+           color:#081b29;
+           box-shadow: 0 0 20px #0ef;
+
+       }
+         .navbar .show{
+              float: right;
+              list-style:none;
+              color: white;
+              position:absolute;
+              display:none;
+         }
+            .sidebar{
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 15vh;
+                  width: 100vw;
+                  z-index: 99;
+                  background-color:rgba(255, 255, 255, 0.219);
+                  backdrop-filter: blur(10px);
+                  display: none;
+                  flex-direction: row;
+                  
+            }
+              .sidebar li{
+                    width: 100%;
+              }
+                .sidebar a{
+                      width: 100%;
+                }
+                  
+           @media screen and (max-width:1075px) {
+                 .source{
+                      margin-right: 23px;
+                 }
+                 
+           }
+          
+            
+           
+           @media screen and (max-width:908px) {
+            .source{
+                      width: 250px;
+                      height: 250px;
+                      margin-top: 60px;
+            }
+            
+      }
+            @media screen and (max-width:721px) {
+            .prot{
+                font-size: 20px;
+                margin-left: 10px;
+                margin-top: 23px;
+            }
+              .source{
+                  margin-top: 55px;
+              }
+             
+      }
+                 @media screen and (max-width:680px) {
+            .prot{
+                 margin-top: 23px;
+                 margin-left: -1px;
+            }
+           
+      }
+                  @media screen and (max-width:669px) {
+                  .navbar li{
+                      font-size: medium;
+                   }
+                      .prot{
+                        margin-top: 19px;
+                        margin-left: -20px;
+                      }
+                     
+             }      
+                     @media screen and (max-width:615px)
+                      
+                 {
+                      .prot{
+                           margin-top: -41px;
+                      }
+                      
+                  }
+                     @media screen and (max-width:430px){
+                                   
+                                .formob{
+                                  display: none;
+                               }      
+                                 .navbar .show{
+                                  display: block;
+                                  right: 0;
+                                 }
+                                .prot{
+                                display: block;
+                                position: absolute; 
+                                left: 0;
+                            }
+                                 #intro{
+                                 text-shadow: none;
+                                 font-size: 20px;
+                                 }
+                              
+                     }    
+                             @media screen and (max-width:320px){
+                                 
+                                          .home-sci a{
+                                           font-size: 20px;
+                                           margin-left: 1px;
+                                     }
+                                           .source{
+                                            width: 230px;
+                                            height: 230px;
+                                        }
+                                             #intro{
+                                             text-shadow: none;
+                                             font-size: 20px;
+                                 }  
+                              }
+                    /*CSS for about section*/
+                      
+                  
+                  
+                  
+                  
+                   
+                    h1{
+                         color: whitesmoke;
+                         text-align: center;
+                         font-size: 2.7em;
+                         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifsans-serif;
+                         
+                      }
+                      span{
+                            color: #0ef;
+                      }
+                        p{
+                            color: whitesmoke;
+                        }
+                          .para{
+                              margin-top: 75px;
+                              margin-left: 20px;
+                              font-size: larger;
+                              line-height: 1.3;
+                              border: 2px solid whitesmoke;
+                              border-radius: 10px;
+                              width: 54%;
+                              padding-left: 2px;
+                              box-shadow: 3px 3px 3px 15px rgb(148, 156, 171);
+                          }
+                           .para1{
+                            margin-top: 65px;
+                            margin-left: 20px;
+                            font-size: larger;
+                            line-height: 1.3;
+                            border: 2px solid whitesmoke;
+                            border-radius: 10px;
+                            width: 54%;
+                            padding-left: 2px;
+                            box-shadow: 3px 3px 3px 15px rgb(148, 156, 171);
+                           }
+                            
+                               #sx{
+                                  float: right;
+                                  box-shadow: 2px 2px 2px 2px rgb(148, 156, 171);
+                                  margin-top: -70px;
+                               }
+                                button:hover{
+                                 background-color:rgba(0, 255, 255, 0.208);
+                                 cursor:pointer;
+                             }
+                               @media screen and (max-width:1535px){
+                                    .para{
+                                         font-size: 20px;
+                                    }
+                                     .para1{
+                                        font-size: 20px;
+                                     }
+                                     img{
+                                         width:350px;
+                                         height: 350px;
+                                         right:2px;
+                                        }
+                               }
+                               @media screen and (max-width:1040px){
+                                .para{
+                                  font-size: 15px;
+                             }
+                                 .para1{
+                                 font-size: 15px;
+                              }
+                                  img{
+                                  width:250px;
+                                  height: 250px;
+                             }
+                               }
+                               @media screen and (max-width:790px){
+                                .para{
+                                  font-size: 16px;
+                             }
+                                 .para1{
+                                 font-size: 16px;
+                              }
+                                  img{
+                                  width:250px;
+                                  height: 250px;
+                                  margin-right: 15px;
+                                  margin-top: 200px;
+                             }
+                                 #sx{
+                                      margin-top: -70px;
+                                      font-size: 15px;
+                                 }
+                               }
+                               @media screen and (max-width:450px){
+                                       img{
+                                          display: none;
+                                       }
+                                        .para{
+                                           width: 80%;
+                                           font-size: 16px;
+                                        }
+                                        .para1{
+                                           width:80%;
+                                           font-size: 16px;
+                                        }
+                                         #sx{
+                                          margin-top: -20px;
+                                          margin-right:190px ;
+                                          font-size: 10px;
+                                         }
+                               }
+                               @media screen and (max-width:390px){
+                                .para{
+                                  
+                                  font-size: 15px;
+                               }
+                               .para1{
+                                  
+                                  font-size: 15px;
+                               }
+                               #sx{
+                                 margin-top: -20px;
+                                 margin-right:160px ;
+                                 font-size: 10px;
+                            }
+                           }
+                            @media screen and (max-width:320px){
+                              #sx{
+                                 margin-top: -20px;
+                                 margin-right:140px ;
+                                 font-size: 10px;
+                            }
+                               }
+                                /*css for skill section*/
+                               h1{
+                                text-align: center;
+                                color: whitesmoke;
+                                margin-bottom: 1.2em;
+                                text-shadow: 1.5px 0.6px;
+                                font-size: 40px;
+                            }
+                         body{
+                               background:rgba(0, 10, 16, 0.966);
+                          }
+                         p { 
+                             font-size: 20px; 
+                             color:whitesmoke;
+                            
+                         } 
+                          span{
+                               color: #0ef;
+                          }
+                       
+                         .container { 
+                             background-color: black; 
+                             width: 48%; 
+                             border-radius: 15px; 
+                             
+                         } 
+                           #para{
+                                margin-left: 9.6em;
+                                font-size: 25px;
+                                letter-spacing: 2px;
+                                margin-top: 1.1em;
+                                text-shadow: 1px 0.1px whitesmoke;
+                           }
+                            #para1{
+                                float: right;
+                                margin-top: -2.3em;
+                                font-size: 25px;
+                                letter-spacing: 2px;
+                                margin-right: 9.6em;
+                                text-shadow: 1px 0.1px whitesmoke;
+                            }
+                       
+                         .skill { 
+                             background-color: #0ef; 
+                             color: black; 
+                             padding: 0.2px; 
+                             text-align: right; 
+                             font-size: 15px; 
+                             border-radius: 15px; 
+                         } 
+                       
+                         .html { 
+                             width: 90%; 
+                         } 
+                       
+                         .css { 
+                             width: 82%; 
+                         } 
+                          .javascript{
+                               width: 68%;
+                          }
+                           .cplus{
+                               width:50%;
+                           }
+                           .java{
+                               width:80%;
+                           }
+                           .python{
+                             width:78%;
+                         }
+                                .cont{
+                                    float: right;
+                                    margin-right: 25em;
+                                    padding: 10px;
+                                    
+                               }
+                                     .paratwo {
+                                       width: 200px;
+                                       height:200px;
+                                       border-radius: 50%;
+                                       border:10px solid #0ef;
+                                       display: flex;
+                                       align-items: center;
+                                       justify-content: center;
+                                       margin:2px;
+                                       background: rgba(0, 0, 0, 0.318);
+                                      -webkit-text-fill-color: white;
+                                 }
+                                      #comu{
+                                        text-align: center;
+                                    }
+                                      .cont1{
+                                           float: right;
+                                           margin-right: -30em;
+                                           padding: 10px;
+                                           
+                                      }  
+                                          #aw{
+                                               float: right;
+                                               box-shadow: 2px 2px 2px 2px rgb(148, 156, 171);
+                                               margin-top: -70px;
+                                           }
+                                             button:hover{
+                                               background-color:rgba(0, 255, 255, 0.208);
+                                               cursor:pointer;
+                                             }
+                                          
+                                        
+                                            .paratwo1{
+                                             width: 200px;
+                                             height:200px;
+                                             border-radius: 50%;
+                                             border:10px solid #0ef;
+                                             display: flex;
+                                             align-items: center;
+                                             justify-content: center;
+                                             margin-top:2px;
+                                             background: rgba(0, 0, 0, 0.318);
+                                            -webkit-text-fill-color: white;
+                                              margin-right: -5.9em;
+                                         }
+                                           .heading{
+                                               font-size: 20px;
+                                           }
+                                           h2{
+                                                text-align: center;
+                                                color: white;
+                                         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                                          }
+                                             @media  screen and (max-width:1030px) {
+                                                #para{
+                                                   display: none;
+                                                }
+                                                 #para1{
+                                                      display: none;
+                                                 }
+                                                  .cont{
+                                                      display:none
+                                                  }
+                                                   .cont1{
+                                                       display:none
+                                                   }
+                                                     .container{
+                                                          width:80%;
+                                                     }
+                                                     .skill{
+                                                          padding:2px;
+                                                     }
+                                                     #aw{
+                                                          margin-top: -80px;
+                                                     }
+                                             }
+                                               @media  screen and (max-width:780px){
+                                                      .container{
+                                                          width:95%;
+                                                     }
+                                                       .skill{
+                                                          padding:5px;
+                                                     }
+                                                      .heading{
+                                                          font-size: 15px;
+                                                      }
+                                                       p{
+                                                           font-size: 30px;
+                                                       }
+                                                       #aw{
+                                                         margin-top: -50px;
+                                                         font-size: 25px;
+                                                    }
+                                          }
+                                          @media  screen and (max-width:425px){
+                                                     
+                                                    h1{
+                                                       text-shadow: none;
+                                                       font-size: 200px;
+                                                     }
+                                                   p{
+                                                     font-size: 180px;
+                                                   }
+                                                    .skill{
+                                                     padding:15px;
+                                                     
+                                                    }
+                                                      #aw {
+                                                          
+                                                          margin-top: -20px;
+                                                          margin-right:190px ;
+                                                          font-size: 20px;
+                                                      }
+                                                        
+                                                        
+                                          }
+                                          @media  screen and (max-width:375px){
+                                             #aw {
+                                                          
+                                                 margin-top: -20px;
+                                                 margin-right:190px ;
+                                                 font-size: 20px;
+                                             }
+                                          }
+                                             
+                    
